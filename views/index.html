@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Bootstrap CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Todo List</h1>
+
+        <form id="todo-form" class="row g-3">
+            <div class="col-md-6">
+                <input type="text" id="title" class="form-control" placeholder="Title" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="description" class="form-control" placeholder="Description" required>
+            </div>
+            <div class="col-md-6">
+                <input type="number" id="price" class="form-control" placeholder="Price" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="imageUrl" class="form-control" placeholder="Image URL" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </form>
+
+        <ul id="todo-list" class="list-group my-4"></ul>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
